@@ -19,14 +19,14 @@ st.title("Audio Classification using CNNs")
 @st.cache_resource
 def load_model(model_path_with_model, model_name):
     # Change made of \\ due to file not found error
-    with open(f"{model_path_with_model}\\{model_name}.json", "r") as json_file:
+    with open(f"{model_path_with_model}/{model_name}.json", "r") as json_file:
         model_json = json_file.read()
     model = model_from_json(model_json)
-    model.load_weights(f"{model_path_with_model}\\{model_name}.weights.h5")
+    model.load_weights(f"{model_path_with_model}/{model_name}.weights.h5")
     return model
 
 
-models_path = "C:\\Users\\ritis\\Desktop\\Audio-Classification-CNNs\\vastai\\working\\models"
+models_path = "vastai/working/models"
 
 waveform_gender = load_model(models_path, "waveform_gender_model")
 waveform_digit = load_model(models_path, "waveform_num_model")

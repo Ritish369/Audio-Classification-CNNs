@@ -13,10 +13,10 @@ warnings.filterwarnings("ignore")
 
 
 def load_model(model_path_with_model, model_name):
-    with open(f"{model_path_with_model}\\{model_name}.json", "r") as json_file:
+    with open(f"{model_path_with_model}/{model_name}.json", "r") as json_file:
         model_json = json_file.read()
     model = model_from_json(model_json)
-    model.load_weights(f"{model_path_with_model}\\{model_name}.weights.h5")
+    model.load_weights(f"{model_path_with_model}/{model_name}.weights.h5")
     return model
 
 
