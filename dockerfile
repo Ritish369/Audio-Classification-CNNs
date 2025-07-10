@@ -8,6 +8,7 @@ ENV PYTHONUNBUFFERED=1
 COPY requirements.txt ./
 COPY vastai/working/models ./
 
+RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 RUN python -c "import matplotlib.pyplot as plt"
 
