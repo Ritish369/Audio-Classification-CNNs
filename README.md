@@ -21,7 +21,7 @@ Think of this as an open source project and Consider contributing to this reposi
 
 **Some of these issues are:**
 
-Perfectly timed recordings for the models to make predictions -- isn't q second a tight constraint ? Can this recording time be increased as a buffer for better working ?
+Perfectly timed recordings for the models to make predictions -- isn't a second long recording a tight constraint ? Can this recording time be increased as a buffer for better working ?
 
 Is there any way to stop the recording automatically after the decided period of time ?
 
